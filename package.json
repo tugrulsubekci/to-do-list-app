@@ -15,5 +15,8 @@
     "lodash": "^4.17.21",
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.21"
+  },
+  "engines": {
+    "node": "v18.14.1"
   }
 }
