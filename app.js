@@ -96,6 +96,12 @@ app.post("/delete/:id", async function(req, res) {
     res.redirect("/" + listTitle);
 });
 
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000');
+let PORT = process.env.PORT;
+
+if(PORT === "" || PORT === null) {
+    PORT = 3000;
+}
+
+app.listen(PORT, () => {
+    console.log('Example app listening on port' + PORT);
 });
